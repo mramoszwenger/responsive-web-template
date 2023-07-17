@@ -1,0 +1,57 @@
+//Barra de Navegación Global
+
+#principal-nav a {
+   font-size: 20px;
+   font-weight: 600;
+   color: #333333;
+   transition: 0.5s;
+    &:hover {
+        font-size: 22px;
+        color: #ff5ee1;
+        text-shadow: #000000 1px 0 10px;
+    }
+
+    .company__logo {
+        width: 250px;
+        margin: 5px 0 0 50px;
+    }    
+}
+
+.navbar-nav {
+    margin: 0 50px 0 0;
+    }
+
+    .navbar-toggler {
+        margin: 0 50px 0 0;
+    }
+
+// ----- Estilo del Header en Pantallas Chicas ----- //
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+@mixin mediaQueries ($size)
+{
+    @media screen and (max-width: map-get($grid-breakpoints,$size))
+    {
+        @content;
+    }
+}
+
+body {
+    @include mediaQueries(md) {
+
+        #principal-nav a {
+             .company__logo {
+                 width: 150px;
+                 margin: 5px 0 0 50px;
+             }    
+         }
+    }
+}

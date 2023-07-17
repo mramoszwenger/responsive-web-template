@@ -1,0 +1,98 @@
+// ----- Estilo del Sitio Web en Pantallas Chicas ----- //
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+@mixin mediaQueries ($size)
+{
+    @media screen and (max-width: map-get($grid-breakpoints,$size))
+    {
+        @content;
+    }
+}
+
+body {
+    @include mediaQueries(md) {
+
+        .us {
+            padding: 0;
+            margin: 0;
+
+            &__title {
+                color: #333333;
+                text-align: center;   
+                padding-top: 20%;
+            }
+
+            &__description {
+                color: #333333;
+                text-align: center;
+                font-size: 16px;
+                padding-top: 5%;
+                margin-bottom: 25%;
+            }
+
+        }
+
+        .service {
+            background-color: #DDDDDD;
+            height: 1150px;
+            align-items: center;
+            padding: 25% 5% 25% 5%;
+
+            &__box {
+                height: 300px;
+            }
+
+            &__description {
+                font-size: 16px;;
+            }
+        }
+
+        .connection__section {
+            margin: 3% 0 3% 0;
+
+            .connection__title {
+                font-size: 24px;
+            }
+
+            #connection__button {
+                font-size: 20px;
+            }
+        }
+
+    // ----- Página de Contacto ----- //
+
+        .contact {
+
+            &__head {
+                padding-top: 50%;
+                padding-bottom: 25%;
+            }
+
+            &__title {
+                font-size: 28px;
+            }
+
+            &__description {
+                font-size: 20px;
+            }
+
+            &__background {
+                margin-top: 15%;
+                margin-bottom: 15%;
+                padding: 0 5% 0 5%;
+            }
+
+            #contact__button {
+                font-size: 20px;
+            }
+        }
+    }
+}

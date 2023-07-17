@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap");
+#principal-nav a {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333333;
+  transition: 0.5s;
+}
+#principal-nav a:hover {
+  font-size: 22px;
+  color: #ff5ee1;
+  text-shadow: #000000 1px 0 10px;
+}
+#principal-nav a .company__logo {
+  width: 250px;
+  margin: 5px 0 0 50px;
+}
+
+.navbar-nav {
+  margin: 0 50px 0 0;
+}
+
+.navbar-toggler {
+  margin: 0 50px 0 0;
+}
+
+@media screen and (max-width: 768px) {
+  body #principal-nav a .company__logo {
+    width: 150px;
+    margin: 5px 0 0 50px;
+  }
+}
+
+.footer {
+  padding: 5% 0 5% 0;
+  margin: 0;
+  background: #333333;
+  color: #ffffff;
+  text-align: center;
+}
+.footer__description {
+  font-size: 20px;
+}
+.footer__link {
+  text-decoration: none;
+  color: #ffffff;
+}
+.footer__link:hover {
+  text-shadow: #ffffff 1px 0 10px;
+}
+
+@media screen and (max-width: 768px) {
+  body .footer__description {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body .us {
+    padding: 0;
+    margin: 0;
+  }
+  body .us__title {
+    color: #333333;
+    text-align: center;
+    padding-top: 20%;
+  }
+  body .us__description {
+    color: #333333;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 5%;
+    margin-bottom: 25%;
+  }
+  body .service {
+    background-color: #DDDDDD;
+    height: 1150px;
+    align-items: center;
+    padding: 25% 5% 25% 5%;
+  }
+  body .service__box {
+    height: 300px;
+  }
+  body .service__description {
+    font-size: 16px;
+  }
+  body .connection__section {
+    margin: 3% 0 3% 0;
+  }
+  body .connection__section .connection__title {
+    font-size: 24px;
+  }
+  body .connection__section #connection__button {
+    font-size: 20px;
+  }
+  body .contact__head {
+    padding-top: 50%;
+    padding-bottom: 25%;
+  }
+  body .contact__title {
+    font-size: 28px;
+  }
+  body .contact__description {
+    font-size: 20px;
+  }
+  body .contact__background {
+    margin-top: 15%;
+    margin-bottom: 15%;
+    padding: 0 5% 0 5%;
+  }
+  body .contact #contact__button {
+    font-size: 20px;
+  }
+}
+
+* {
+  font-family: "montserrat";
+}
+
+h1 {
+  color: #333333;
+  font-size: 54px;
+}
+
+h2 {
+  color: #333333;
+  font-size: 44px;
+}
+
+h3 {
+  color: #333333;
+  font-size: 32px;
+}
+
+h4 {
+  color: #333333;
+  font-size: 28px;
+}
+
+h5 {
+  color: #333333;
+  font-size: 24px;
+}
+
+h6 {
+  color: #777777;
+  font-size: 24px;
+}
+
+p {
+  color: #777777;
+  font-size: 24px;
+}
+
+.carousel-text {
+  color: #ffffff;
+  font-size: 72px;
+  font-weight: bold;
+  margin-top: -500;
+  text-shadow: #000000 1px 0 10px;
+}
+
+.us {
+  padding: 0 10% 0 10%;
+  margin: 5% 0 10% 0;
+}
+.us__title {
+  text-align: center;
+  font-weight: 600;
+  padding-top: 7%;
+}
+.us__description {
+  text-align: center;
+  padding-top: 5%;
+}
+
+.service {
+  background-image: url(/img/redDatos.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #dddddd;
+  height: 800px;
+  align-items: center;
+  padding: 0 10% 0 10%;
+  animation-name: serviceAnimation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.service__title {
+  font-weight: 600;
+  text-align: center;
+  margin-top: 15%;
+  text-shadow: #000000 1px 0 10px;
+}
+.service__description {
+  color: #ffffff;
+  text-align: center;
+  padding: 0 5% 0 5%;
+  margin-top: 15%;
+  line-height: 160%;
+}
+.service__flip {
+  position: relative;
+  display: inline-block;
+  width: 400px;
+}
+.service__flip > .front,
+.service__flip > .back {
+  display: block;
+  color: #ffffff;
+  width: inherit;
+  background-size: cover !important;
+  background-position: center !important;
+  height: 400px;
+  padding: 1em 2em;
+  background: #333333;
+  border-radius: 25px;
+}
+
+.service__flip {
+  position: relative;
+}
+.service__flip > .front,
+.service__flip > .back {
+  display: block;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-duration: 0.5s;
+  transition-property: transform, opacity;
+}
+.service__flip > .front {
+  transform: rotateY(0deg);
+}
+.service__flip > .back {
+  position: absolute;
+  opacity: 0;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  transform: rotateY(-180deg);
+}
+.service__flip:hover > .front {
+  transform: rotateY(180deg);
+}
+.service__flip:hover > .back {
+  opacity: 1;
+  transform: rotateY(0deg);
+}
+
+@keyframes serviceAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 50% -50%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+.connection__section {
+  background-image: url(/img/backgroundContact.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+.connection__section .connection__title {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 36px;
+  margin-bottom: 5%;
+  text-shadow: #000000 1px 0 10px;
+}
+.connection__section .connection__link {
+  text-decoration: none;
+  color: #ffffff;
+}
+.connection__section .connection__link:hover {
+  text-shadow: #ffffff 1px 0 10px;
+}
+.connection__section .connection__link:hover {
+  text-shadow: none;
+}
+.connection__section #connection__button {
+  background-color: #634382;
+  border-color: #634382;
+  box-shadow: #000000 1px 0 10px;
+  border-radius: 10px;
+  padding: 1% 10% 1% 10%;
+  font-size: 28px;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.connection__section #connection__button:hover {
+  background-color: #ff5ee1;
+  border-color: #ff5ee1;
+  padding: 1.25% 10.25% 1.25% 10.25%;
+}
+
+.contact__head {
+  background-image: url(/img/backgroundKeyboard.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  padding-top: 15%;
+  padding-bottom: 10%;
+  text-shadow: #000000 1px 0 10px;
+}
+.contact__title {
+  font-size: 72px;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+}
+.contact__description {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 1%;
+}
+.contact__background {
+  background-image: url(/img/redDatos.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5% 20% 5% 20%;
+  animation-name: contactAnimation;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes contactAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 25% 25%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+.contact #contact__button {
+  background-color: #634382;
+  border-color: #634382;
+  box-shadow: #000000 1px 0 10px;
+  border-radius: 10px;
+  padding: 1% 10% 1% 10%;
+  font-size: 28px;
+  font-weight: 600;
+  transition: 0.5s;
+  color: #ffffff;
+}
+.contact #contact__button:hover {
+  background-color: #ff5ee1;
+  border-color: #ff5ee1;
+  padding: 1.25% 10.25% 1.25% 10.25%;
+}
+
+/*# sourceMappingURL=estilos.css.map */

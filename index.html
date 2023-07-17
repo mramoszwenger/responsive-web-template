@@ -1,0 +1,198 @@
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Responsive | Maximiliano Ramos Zwenger</title>
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!--  Optimización SEO del Sitio Web  -->
+
+    <meta name="description" content="Plantilla Personalizable de Sitio Web Responsive">
+    <meta name="keywords" content="Web, Responsive, Adaptble, Pagina Web, Web Personalizable, Custom Web, Responsive Web">
+
+    <meta property="og:type" content="Desarrollo Web">
+    <meta property="og:title" content="Plantilla de Sitio Web Responsivo">
+    <meta property="og:description" content="Plantilla personalizable de Sitio Web Responsive ideal para ofrecer servicios profesionales">
+    <meta property="og:image" content="img/isotipoEmpresa.png">
+    <meta property="og:url" content="https://mramoszwenger.github.io/PreEntrega3-RamosZwengerMaximiliano">
+
+</head>
+
+<body>
+
+<!-- Barra de navegacion -->
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="principal-nav">
+
+            <!-- Logo institucional/corporativo -->
+
+            <div class="container-fluid">
+              <a class="animate__animated animate__bouncein navbar-brand" href="#">
+                <img src="img/logotipoEmpresa.png" alt="logo-empresa" class="company__logo">
+              </a>
+            
+            <!-- Boton menu hamburgesa -->
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+            <!-- Elementos del menu -->
+
+              <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#nosotros">Nosotros</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" >Servicios</a>
+                    <ul class="dropdown-menu text-center">
+                      <li>
+                        <a class="dropdown-item" href="#servicios">Servicio Uno</a>
+                        </li>
+                      <li>
+                        <a class="dropdown-item" href="#servicios">Servicio Dos</a>
+                     </li>
+                      <li>
+                        <a class="dropdown-item" href="#servicios">Servicio Tres</a>
+                     </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+    </header>
+
+<!-- Carrusel del encabezado -->
+
+    <div id="sliderControl" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Navegacion del carrusel -->
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#sliderControl" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#sliderControl" data-bs-slide-to="1"></button>
+        </div>
+  
+    <!-- Contenido del carrusel -->
+
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+                <img src="img/backgroundDesign.jpg" class="d-block w-100" alt="Web Design">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="carousel-text">Lorem Ipsum Dolor Sit Amet</h1>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="img/backgroundResponsive.jpg" class="d-block w-100" alt="Responsive Design">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="carousel-text">Lorem Ipsum Dolor Sit Amet</h1>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+<!-- Seccion nosotros -->
+
+    <section class="container-fluid">
+
+        <a name="nosotros"></a>
+
+        <div class="us">
+            
+            <h2 class="us__title">Quienes Somos</h2>
+            <p class="us__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris molestie augue id risus finibus dapibus. Phasellus vel leo nec enim efficitur tincidunt. Sed sagittis massa dui, ac interdum diam elementum ut. Phasellus tellus nisl, aliquet ac commodo vel, aliquam quis odio. Morbi sed dui luctus, auctor risus ut, sollicitudin sapien. Aliquam ipsum est, congue sed enim nec, imperdiet dictum quam. Proin rhoncus elit eget suscipit elementum. Integer rutrum nisl rutrum dignissim vehicula.</p>
+
+        </div>
+
+    </section>
+
+<!-- Seccion servicios -->
+
+    <section class="container-fluid">
+
+        <a name="servicios"></a>
+                
+        <div class="service row">
+
+            <div class="col-lg-4 col-sm-12 col-xs-12">
+                <div class="service__flip">
+                    <div class="front" style="background-image: url(img/backgroundServices.jpg)">
+                    <h1 class="service__title">Servicio Uno</hi>
+                    </div>
+                    <div class="back">
+                    <p class="service__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris molestie augue id risus finibus dapibus. Phasellus vel leo nec enim efficitur tincidunt.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-12 col-xs-12">
+                <div class="service__flip">
+                    <div class="front" style="background-image: url(img/backgroundServices.jpg)">
+                    <h1 class="service__title">Servicio Dos</hi>
+                    </div>
+                    <div class="back">
+                    <p class="service__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris molestie augue id risus finibus dapibus. Phasellus vel leo nec enim efficitur tincidunt.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-12 col-xs-12">
+                <div class="service__flip">
+                    <div class="front" style="background-image: url(img/backgroundServices.jpg)">
+                    <h1 class="service__title">Servicio Tres</hi>
+                    </div>
+                    <div class="back">
+                    <p class="service__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris molestie augue id risus finibus dapibus. Phasellus vel leo nec enim efficitur tincidunt.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+<!-- Seccion contacto -->
+
+    <section class="container-fluid">
+
+        <div class="connection__section row text-center">
+
+            <h3 class="connection__title">Hacemos realidad tu proyecto</h3>
+            
+            <div>
+                <button class="btn btn-primary btn-lg" role="button" id="connection__button"><a class="connection__link" href="contacto.html">Contactanos</a></button>
+            </div>
+
+        </div>
+
+    </section>
+
+<!-- Pie de pagina -->
+
+    <footer class="footer">
+        <h5 class="footer__description">©2023. Desarrollado por <a class="footer__link" href="#">Maximiliano Ramos Zwenger</a></h5>
+    </footer>
+
+<!-- Bootstrap js -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

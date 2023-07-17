@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap');
+
+$colours: (
+
+    primary: #634382,
+    altPrimary: #ff5ee1,
+    secondary: #13C0E5,
+    altSecondary: #777777,
+    basicWhite: #ffffff,
+    basicBlack: #000000,
+    light-grey: #777777,
+    dark-grey: #333333,
+    backgroundColour: #dddddd
+);
+
+$shadows: (
+
+    dark: #000000 1px 0 10px,
+    light: #ffffff 1px 0 10px
+);
+
+@mixin fonts ($family: 'montserrat')
+{
+    font-family: $family;
+}
+
+@mixin h1-style ($fColor: map-get($colours,dark-grey))
+{
+    color: $fColor;
+    font-size: 54px;
+}
+
+@mixin h2-style ($fColor: map-get($colours,dark-grey))
+{
+    color: $fColor;
+    font-size: 44px;
+}
+
+@mixin h3-style ($fColor: map-get($colours,dark-grey))
+{
+    color: $fColor;
+    font-size: 32px;
+}
+
+@mixin h4-style ($fColor: map-get($colours,dark-grey))
+{
+    color: $fColor;
+    font-size: 28px;
+}
+
+@mixin h5-style ($fColor: map-get($colours,dark-grey))
+{
+    color: $fColor;
+    font-size: 24px;
+}
+
+@mixin h6-style ($fColor: map-get($colours,light-grey))
+{
+    color: $fColor;
+    font-size: 24px;
+}
+
+@mixin p-style ($fColor: map-get($colours,light-grey))
+{
+    color: $fColor;
+    font-size: 24px;
+}
+
+@mixin default_link ($decoration: none, $textColor: map-get($colours,basicWhite), $shadow: map-get($shadows,light))
+{
+    text-decoration: $decoration;
+    color: $textColor;
+       &:hover {
+            text-shadow: $shadow;
+    }
+}
+
+@mixin default_button ($background: map-get($colours,light-grey), $shadow: map-get($shadows, dark), $bColor: map-get($colours,light-grey))
+{
+    background-color: map-get($colours, primary);
+    border-color: map-get($colours, primary);
+    box-shadow: $shadow;
+    border-radius: 10px;
+    padding: 1% 10% 1% 10%;
+    font-size: 28px;
+    font-weight: 600;
+    transition: 0.5s;
+        &:hover  {
+            background-color: map-get($colours, altPrimary);
+            border-color: map-get($colours, altPrimary);
+            padding: 1.25% 10.25% 1.25% 10.25%;
+    }
+}

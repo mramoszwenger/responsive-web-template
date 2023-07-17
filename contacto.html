@@ -1,0 +1,127 @@
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos | Maximiliano Ramos Zwenger</title>
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!--  Optimización SEO del Sitio Web  -->
+
+    <meta name="description" content="Plantilla Personalizable de Sitio Web Responsive">
+    <meta name="keywords" content="Web, Responsive, Adaptble, Pagina Web, Web Personalizable, Custom Web, Responsive Web, Formulario de Contacto, Contact Form">
+
+    <meta property="og:type" content="Desarrollo Web">
+    <meta property="og:title" content="Formulario de Contacto de la Plantilla de Sitio Web Responsivo">
+    <meta property="og:description" content="Formulario de contacto personalizable del Sitio Web Responsive ideal para ofrecer servicios profesionales">
+    <meta property="og:image" content="https://raw.githubusercontent.com/mramoszwenger/PreEntrega3-RamosZwengerMaximiliano/sass-compiled-v3.1-preEntrega3%5DRamosZwengerMaximiliano/img/isotipoEmpresa.png>
+    <meta property="og:url" content="https://mramoszwenger.github.io/PreEntrega3-RamosZwengerMaximiliano">
+
+</head>
+
+<body>
+
+<!-- Barra de navegacion -->
+
+<header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="principal-nav">
+
+        <!-- Logo institucional/corporativo -->
+
+        <div class="container-fluid">
+          <a class="animate__animated animate__bouncein navbar-brand" href="index.html">
+            <img src="img/logotipoEmpresa.png" alt="logo-empresa" class="company__logo">
+          </a>
+        
+        <!-- Boton menu hamburgesa -->
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+        <!-- Elementos del menu -->
+
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#nosotros">Nosotros</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" >Servicios</a>
+                <ul class="dropdown-menu text-center">
+                  <li>
+                    <a class="dropdown-item" href="index.html#servicios">Servicio Uno</a>
+                    </li>
+                  <li>
+                    <a class="dropdown-item" href="index.html#servicios">Servicio Dos</a>
+                 </li>
+                  <li>
+                    <a class="dropdown-item" href="index.html#servicios">Servicio Tres</a>
+                 </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+</header>
+
+<!-- Seccion contacto -->
+
+    <a name="contacto"></a>
+
+    <section class="container-fluid contact">
+
+        <div class="contact__head row">
+            <h2 class="contact__title">Contactanos</h2>
+            <div>
+              <p class="contact__description">Dejanos tus datos y en breve alguien de nuestro equipo se pondrá en contacto contigo.</p>
+          </div>
+        </div>
+
+        <div class="contact__background">
+          <form class="contact__form">
+              <div class="mb-3">
+                  <input type="text" class="form-control" id="nombre-apellido" placeholder="Su nombre y apellido">
+              </div>
+              <div class="mb-3">
+                  <input type="email" class="form-control" id="correo-electronico" placeholder="Su correo electrónico">
+              </div>
+              <div class="mb-3">
+                  <input type="email" class="form-control" id="asunto" placeholder="Asunto del contacto">
+              </div>
+              <div class="mb-3">
+                  <textarea class="form-control" id="mensaje" placeholder="Su mensaje..." rows="10"></textarea>
+              </div>
+              <div class="d-grid gap-2 text-center">
+                  <button class="btn" id="contact__button" type="submit">Enviar mensaje</button>
+              </div>
+          </form>
+      </div>
+
+    </section>
+
+<!-- Pie de pagina -->
+
+    <footer class="footer">
+        <h5 class="footer__description">©2023. Desarrollado por <a class="footer__link" href="#">Maximiliano Ramos Zwenger</a></h5>
+    </footer>
+
+<!-- Bootstrap js -->    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+</body>
+
+</html>

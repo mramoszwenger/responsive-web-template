@@ -1,0 +1,54 @@
+// Pie de Página Global
+
+@mixin default_link ($decoration: none, $textColor: #ffffff, $shadow: #ffffff 1px 0 10px,)
+{
+    text-decoration: $decoration;
+    color: $textColor;
+       &:hover {
+            text-shadow: $shadow;
+    }
+}
+
+.footer {
+    padding: 5% 0 5% 0;
+    margin: 0;
+    background: #333333;
+    color: #ffffff;
+    text-align: center;
+
+    &__description {
+        font-size: 20px;
+    }
+
+    &__link {
+        @include default_link ()
+    }
+}
+
+
+// ----- Estilo del Footer en Pantallas Chicas ----- //
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+@mixin mediaQueries ($size)
+{
+    @media screen and (max-width: map-get($grid-breakpoints,$size))
+    {
+        @content;
+    }
+}
+
+body {
+    @include mediaQueries(md) {
+        .footer__description {
+            font-size: 12px;
+        }
+    }
+}
